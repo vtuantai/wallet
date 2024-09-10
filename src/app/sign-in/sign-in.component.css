@@ -58,7 +58,7 @@
     border-radius: 4px;
     color: #fff;
     background-color: #000;
-    border: 1px solid #b3b3b3;
+    border: 2px solid #b3b3b3;
 }
 
 .action-links {
@@ -84,6 +84,15 @@
     background-color: #147005;
     color: white;
     font-size: 16px;
+    cursor: pointer;
+    /* Add transition for smooth effect */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Shining effect on hover */
+.sign-in-btn:hover {
+    box-shadow: 0 0 10px 2px #14ff00, 0 0 20px 4px #14ff00, 0 0 30px 6px #14ff00; /* Glowing effect */
+    transform: scale(1.02); /* Slightly increase the button size */
 }
 
 .create-account {
