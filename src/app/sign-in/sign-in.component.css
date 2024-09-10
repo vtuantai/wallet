@@ -11,11 +11,21 @@ body {
     color: white;
 }
 
+.login-frame {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 880px;
+    height: 450px;
+    background-color: #1e1e1e;
+    position: relative; /* Added to allow easy centering */
+}
+
 .wallet-logo {
     position: absolute;
-    left: 21%;
+    left: 0%;
     width: 400px;
-    height: 450px;
+    height: 400px;
 }
 
 .wallet-logo img {
@@ -23,19 +33,18 @@ body {
     height: 100%;
 }
 
-.login-box {
+.login-box-frame {
     background-color: #1e1e1e;
     width: 700px;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: right;
-    border: 10px solid #b3b3b3;
+    border: #b3b3b3 solid 7px;
 }
 
-.login-box h1 {
-    margin-bottom: 20px;
-    font-size: 36px;
-    border: 10px solid #b3b3b3;
+.login-box {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    height: 255px;
+    float: right;
 }
 
 .input-group {
@@ -44,8 +53,6 @@ body {
 
 .input-group label {
     display: block;
-    text-align: center;
-    padding-left: 45px;
     margin-bottom: 8px;
     font-size: 14px;
 }
@@ -60,6 +67,7 @@ body {
 }
 
 .action-links {
+    display: block;
     text-align: right;
     margin-bottom: 20px;
 }
@@ -67,6 +75,10 @@ body {
 .action-links a {
     color: #0998ff;
     text-decoration: none;
+}
+
+.action-links a:hover {
+    text-decoration: underline;
 }
 
 .sign-in-btn {
@@ -79,12 +91,16 @@ body {
     font-size: 16px;
 }
 
+.create-account {
+    text-align: center;
+    margin-top: 20px;
+}
+
 .create-account a {
     color: #0998ff;
     text-decoration: none;
 }
 
-.create-account {
-    padding-right: 118px;
-    margin-top: 20px;
+.create-account a:hover {
+    text-decoration: underline;
 }
