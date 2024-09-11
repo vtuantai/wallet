@@ -1,16 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NavbarComponent } from '../navbar/navbar.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { NavSignOnComponent } from './nav-sign-on/nav-sign-on.component';
 
 @Component({
   selector: 'app-sign-up',
   standalone: true,
   imports: [
     RouterModule, 
-    NavbarComponent,
     CommonModule,
     FormsModule,
     NavSignOnComponent
@@ -32,4 +29,5 @@ export class SignUpComponent {
   toggleConfirmPassword(): void {
     this.showConfirmPassword = !this.showConfirmPassword;
   }
-}
+}import { NavSignOnComponent } from '../navbar/nav-sign-on/nav-sign-on.component';
+
