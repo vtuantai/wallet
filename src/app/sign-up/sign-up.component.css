@@ -1,0 +1,76 @@
+.sign-up-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+
+.sign-up-box {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    border: #b3b3b3 solid 7px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 350px;
+    height: 26px;
+    background-color: #000;
+    border-radius: 4px;
+    color: #fff;
+    border: #b3b3b3 solid 2px;
+    
+}
+
+.input-group a {
+    color: red;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.toggle-password i {
+    color: #b3b3b3;
+}
+
+.sign-up-btn {
+    width: 355px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #147005;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: #147005 solid 2px;
+    /* Add transition for smooth effect */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.sign-up-btn:hover {
+    box-shadow: 0 0 10px 2px #14ff00, 0 0 20px 4px #14ff00, 0 0 30px 6px #14ff00;
+    transform: scale(1.01);
+}
