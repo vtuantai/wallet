@@ -1,1 +1,54 @@
-<p>sign-up works!</p>
+<app-nav-sign-on></app-nav-sign-on>
+<div class="sign-up-container">
+    <div class="sign-up-box">
+        <form>
+            <div class="input-group">
+                <label for="email">Email<a>*</a></label>
+                <input type="text" id="email" name="email" required />
+            </div>
+            <div class="input-group">
+                <label for="username">Username<a>*</a></label>
+                <input type="text" id="username" name="username" required />
+            </div>
+            <div class="input-group">
+                <label for="password">Password<a>*</a></label>
+                <div class="password-wrapper">
+                    <input 
+                    [type]="showPassword ? 'text' : 'password'" 
+                    id="password" 
+                    [(ngModel)]="password"
+                    required
+                    />
+                    <span class="toggle-password" (click)="togglePassword()">
+                        <i 
+                        class="fa-regular fa-eye-slash icon" 
+                        [ngClass]="showPassword ? 'fa-eye' : 'fa-eye-slash'"
+                        ></i>
+                    </span>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm password<a>*</a></label>
+                <div class="password-wrapper">
+                    <input 
+                    [type]="showConfirmPassword ? 'text' : 'password'" 
+                    id="confirm-password" 
+                    [(ngModel)]="confirmPassword"
+                    required
+                    />
+                    <span class="toggle-password" (click)="toggleConfirmPassword()">
+                        <i 
+                        class="fa-regular fa-eye-slash icon" 
+                        [ngClass]="showConfirmPassword ? 'fa-eye' : 'fa-eye-slash'"
+                        ></i>
+                    </span>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="phone-number">Phone number<a>*</a></label>
+                <input type="text" id="phone-number" name="phone-number" required />
+            </div>
+        </form>
+        <button type="submit" class="sign-up-btn">Sign up</button>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+/* Navbar Container */
+.navbar-container {
+    background-color: #1e1e1e; /* Background color of the navbar */
+    width: 100%;              /* Full width */
+    height: 60px;             /* Adjust height as needed */
+    display: flex;            /* Use Flexbox for alignment */
+    align-items: center;      /* Center items vertically */
+    justify-content: space-between; /* Space between logo and button */          /* Padding for left and right */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow */
+}
+
+/* Container for Sign-in Button */
+.sign-in-btn {
+    display: flex;                    /* Use Flexbox for alignment */
+    justify-content: center;          /* Center content horizontally */
+    align-items: center;              /* Center content vertically */
+    background-color: transparent;    /* No background for the button */
+}
+
+/* Logo Section */
+.navbar-logo {
+    display: flex;
+    float: left;
+}
+
+.navbar-logo a {
+    color: white;             /* Logo text color */
+    text-decoration: none;    /* Remove underline from text */
+    font-size: 50px;          /* Adjust font size of the logo */
+}
+
+/* Styling the anchor within sign-in button */
+.sign-in-btn a {
+    color: #b3b3b3;                   /* Text color for sign-in link */
+    font-size: 17px;                  /* Font size for text */
+    text-decoration: none;            /* Remove underline */
+    padding: 8px;                /* Padding for better click area */
+    border-radius: 4px;               /* Rounded corners */
+    display: flex;                    /* Flexbox on anchor to align text and icon */
+    align-items: center;              /* Center align text and icon */
+    transition: background-color 0.3s;/* Smooth transition on hover */
+}
+
+/* Icon styling inside the anchor */
+.sign-in-btn i {
+    margin-left: 5px;                 /* Space between text and icon */
+    font-size: 17px;                  /* Adjust icon size if needed */
+}
+
+/* Hover effects */
+.sign-in-btn a:hover {
+    background-color: #333;           /* Background color on hover */
+    color: #0998ff;                     /* Text color on hover */
+}
+
+.sign-in-btn a:hover i {
+    color: #0998ff;                     /* Icon color change on hover */
+}
