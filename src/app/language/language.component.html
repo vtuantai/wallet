@@ -1,1 +1,17 @@
-<p>language works!</p>
+<div class="language-selector">
+    <!-- Show "EN" option only if the selected language is not "EN" -->
+    <div class="language-option" *ngIf="selectedLanguage !== 'en'" [ngClass]="{ active: selectedLanguage === 'en' }"
+        (click)="switchLanguage('en')">
+        <img src="assets/usa-flag.png" alt="US Flag"
+            class="flag" />
+        <span>EN</span>
+    </div>
+
+    <!-- Show "VN" option only if the selected language is not "VN" -->
+    <div class="language-option" *ngIf="selectedLanguage !== 'vn'" [ngClass]="{ active: selectedLanguage === 'vn' }"
+        (click)="switchLanguage('vn')">
+        <img src="assets/vietnam-flag.png" alt="Vietnam Flag"
+            class="flag" />
+        <span>VN</span>
+    </div>
+</div>
