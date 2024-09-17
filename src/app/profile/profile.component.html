@@ -1,1 +1,14 @@
-<p>profile works!</p>
+<div class="profile-container">
+    <div class="profile" (click)="toggleDropdown()">
+        <i class="fa-solid fa-circle-user icon"></i>
+        <span>Username</span>
+
+        <!-- Dropdown List -->
+        <div class="dropdown" *ngIf="isDropdownVisible">
+            <ul>
+                <li href="">Profile</li>
+                <li href="">Sign out</li>
+            </ul>
+        </div>
+    </div>
+</div>
