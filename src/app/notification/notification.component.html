@@ -1,0 +1,17 @@
+<!-- Notification Icon with Font Awesome -->
+<div class="notify-container">
+    <div class="notification" (click)="toggleDropdown()">
+      <i class="fas fa-bell bell"></i>
+      <span class="badge">{{ unreadCount }}</span>
+  
+      <!-- Dropdown List -->
+      <div class="dropdown" *ngIf="isDropdownVisible">
+        <ul>
+          <li *ngFor="let notification of notifications">
+            {{ notification.message }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
