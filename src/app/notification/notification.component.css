@@ -61,3 +61,7 @@
 .dropdown ul li:hover {
     background-color: #1e1e1e;
 }
+
+.notify-container:hover {
+    background-color: #333;
+}

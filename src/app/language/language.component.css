@@ -31,3 +31,7 @@ span {
     font-weight: bold;
     color: #b3b3b3;
 }
+
+.language-selector:hover {
+    background-color: #333;
+}

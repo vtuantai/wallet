@@ -16,17 +16,20 @@
     color: #b3b3b3;
     font-size: 30px;
     margin-right: 5px;
+    padding-bottom: 4px;
 }
 
 .profile span {
     color: #b3b3b3;
     font-size: 17px;
+    padding-bottom: 4px;
 }
 
 .dropdown {
     position: absolute;
-    top: 35px;
+    top: 45px;
     right: 0;
+    min-width: 200px;
     background-color: #2e2d2d;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #b3b3b3;
@@ -51,4 +54,8 @@
 
 .dropdown ul li:hover {
     background-color: #1e1e1e;
+}
+
+.profile-container:hover {
+    background-color: #333;
 }

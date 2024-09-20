@@ -1,0 +1,11 @@
+.body-container {
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.side-bar-left {
+    display: flex;
+    float: left;
+}
