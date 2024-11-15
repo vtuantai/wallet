@@ -1,0 +1,10 @@
+i {
+    display: flex;
+    font-size: 17px;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+i:hover {
+    color: #0998ff;
+}
