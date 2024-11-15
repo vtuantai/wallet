@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { NavSignOnComponent } from '../navbar/nav-sign-on/nav-sign-on.component';
 
 @Component({
   selector: 'app-sign-up',
@@ -29,5 +30,4 @@ export class SignUpComponent {
   toggleConfirmPassword(): void {
     this.showConfirmPassword = !this.showConfirmPassword;
   }
-}import { NavSignOnComponent } from '../navbar/nav-sign-on/nav-sign-on.component';
-
+}

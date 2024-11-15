@@ -1,11 +1,22 @@
 .body-container {
     display: flex;
-    margin-top: 100px;
-    width: 100%;
-    justify-content: space-between;
+    margin-top: 50px;
 }
 
 .side-bar-left {
     display: flex;
     float: left;
+}
+
+.middle-display {
+    display: flex;
+    width: 850px;
+    height: 50px;
+    margin: 0px 50px;
+}
+
+@media only screen and (min-width: 1800px) {
+    .middle-display {
+        width: 1195px;
+    }
 }
