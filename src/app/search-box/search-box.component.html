@@ -1,1 +1,15 @@
-<p>search-box works!</p>
+<div class="search-container">
+    <!---search icon base on left-->
+    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    <input type="text" [(ngModel)]="searchQuery" 
+        placeholder="Search passwords" 
+        (input)="onSearch()"
+        maxlength="150"
+        class="search-input" />
+    <!---clear icon base on right-->
+    <i 
+        class="fa-regular fa-circle-xmark clear-icon"
+        *ngIf="searchQuery"
+        (click)="clearSearch()"
+    ></i>
+</div>
