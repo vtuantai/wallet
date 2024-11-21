@@ -1,12 +1,23 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-search-box',
   standalone: true,
-  imports: [],
+  imports: [
+    CommonModule,
+    FormsModule
+  ],
   templateUrl: './search-box.component.html',
   styleUrl: './search-box.component.css'
 })
 export class SearchBoxComponent {
-
+  searchQuery: string = '';
+  onSearch() {
+    console.log('Search query: ', this.searchQuery)
+  }
+  clearSearch() {
+    this.searchQuery = '';
+  }
 }
